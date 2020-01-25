@@ -1,47 +1,73 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+
+body{
+    padding: 0;
     margin: 0;
-    margin-top: 50px;
-    font-family: sans-serif
 }
-header{
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+h1{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#227093;
     height: 50px;
+    font-size: 120px;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}
+.btn i {
     line-height: 50px;
-    background-color : #eee;
+    font-size:  20px;
+    transition: 0.2s linear;
 }
-header * {
-    display: inline;
-    height: 50px;
+.btn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
 }
-header ul{
-    padding: 10px;
+
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left : -110%;
+    top : 90%;
 }
-header li{
-    margin-right: 10px;
+.btn:hover::before{
+    animation: aaa 0.7s 1;
+    top:-10%;
+    left:-10%;
 }
-section{
-    height: 100vh;
-    border:1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-#Home .profile-img{
-    width: 300px;
-    /* border-radius: 50%; */
-}
-footer{
-    text-align: center;
-    padding: 50px;
-}
-#Home {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)),url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg');
-}
-#About {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)),url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-531880.jpg&fm=jpg');
+
+@keyframes aaa{
+    0%{
+        top:90%;
+        left:-110%;
+    }
+    50%{
+        top:-30%;
+        left:10%;
+    }
+    100%{
+        top:-10%;
+        left:-10%;
+    }
 }
