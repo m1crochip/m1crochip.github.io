@@ -108,6 +108,7 @@ h1{
     color: #3498db;
     height: 50px;
     font-size: 120px;
+    margin-top: 10px;
 }
 
 .profile{
@@ -116,12 +117,11 @@ h1{
 
 .picture{
     width: 350px;
-    top: 10%;
     border-radius: 50%;
 }
 .middle{
     position: absolute;
-    top: 80%;
+    top: 90%;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
