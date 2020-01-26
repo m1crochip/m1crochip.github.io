@@ -9,6 +9,7 @@ body{
     /* justify-content: center;
     align-items: center; */
     font-family: consolas;
+    background: #fff;
 
 }
 .container{
@@ -49,7 +50,7 @@ body{
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     transform: translateY(-80px);
 }
 .container .card:hover .face.face2{
