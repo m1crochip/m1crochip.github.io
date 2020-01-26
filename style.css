@@ -27,6 +27,7 @@ body{
     width: 300px;
     height: 160px;
     transition: 0.5s;
+    border-radius: 8%;
 }
 .container .card .face.face1{
     position: relative;
@@ -38,7 +39,7 @@ body{
     transform: translateY(80px);
 }
 .container .card:hover .face.face1{
-    background-color: #3498db;
+    background-color: #81ecec;
     transform: translateY(0);
     
 }
