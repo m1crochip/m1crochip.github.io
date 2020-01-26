@@ -39,7 +39,7 @@ body{
     transform: translateY(80px);
 }
 .container .card:hover .face.face1{
-    background-color: #81ecec;
+    background-color: #ffeaa7;
     transform: translateY(0);
     
 }
