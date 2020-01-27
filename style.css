@@ -111,6 +111,7 @@ h1{
     height: 50px;
     font-size: 120px;
     margin-top: 10px;
+    z-index: 10;
 }
 
 .profile{
